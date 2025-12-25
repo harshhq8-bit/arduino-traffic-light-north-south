@@ -10,6 +10,7 @@ int southRed = 5;
 int southYellow = 6;
 int southGreen = 7;
 
+
 void setup() {
   pinMode(northRed, OUTPUT);
   pinMode(northYellow, OUTPUT);
