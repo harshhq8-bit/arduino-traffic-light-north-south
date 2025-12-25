@@ -1,7 +1,35 @@
-# arduino-traffic-light-north-south
-North–South traffic light control system using Arduino
-// North-South Traffic Light System
+# 🚦 Arduino Traffic Light System (North–South)
 
+This project demonstrates a **North–South traffic light control system** using **Arduino**.
+It simulates real-world traffic signal behavior using **Red, Yellow, and Green LEDs** for
+both directions.
+
+---
+
+## 🔧 Components Used
+- Arduino Uno  
+- Breadboard  
+- Red, Yellow, Green LEDs (2 sets)  
+- 220Ω Resistors  
+- Jumper wires  
+- USB cable  
+
+---
+
+## ⚙️ Working Principle
+The Arduino controls the traffic lights using **digital output pins** and **time delays**.
+Only one direction receives a green signal at a time while the other remains red, ensuring
+safe and orderly traffic flow.
+
+---
+
+## 🔌 Circuit Connections
+Refer to the `connections.md` file for detailed wiring information.
+
+---
+
+## 💻 Arduino Code
+```cpp
 int northRed = 2;
 int northYellow = 3;
 int northGreen = 4;
@@ -9,7 +37,6 @@ int northGreen = 4;
 int southRed = 5;
 int southYellow = 6;
 int southGreen = 7;
-
 
 void setup() {
   pinMode(northRed, OUTPUT);
